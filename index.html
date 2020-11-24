@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>KitchenSpace</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/frying-pen-logo.jpg">
+</head>
+<body>
+    <header>
+        <div class="header-topper">
+            <div class="header-topper-row1">
+                <a href="tel:+12345678900" id="header-tel">+1 (234) 567 89 00</a>
+                <div>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="header-topper-row2">
+                <h2 class="header-topper-title">KitchenSpace</h2>
+                <nav class="navbar navbar-expand-lg navbar-light light-blue lighten-4">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="dark-blue-text">
+                            <i class="fas fa-bars fa-1x"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                        <ul class="header-menu navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#products">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#bestselling">Best-selling</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact us</a>
+                            </li>
+                            <li>
+                                <div class="basket-button">
+                                    <a class="openCartLink" href="#modal-cart" data-toggle="modal">
+                                        BASKET
+                                        <span id="cart-badge" class="badge badge-light"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header-lower">
+            <h1 class="header-lower-title">
+                Kitchen Gadgets
+	              <br>
+                <span>for Cute Home</span>
+            </h1>
+            <p>10+ models of fancy cooking gadgets.
+            <p>
+                <div><a class="buy-now" id="buy-now" href="#products">BUY NOW</a></div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-product-list-container"></div>
+                    <hr>
+                    <div class="container">
+                        <form class="form-contacts">
+                            <div class="form-group row">
+                                <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                                <input class="form-control col-8" type="text" id="client-name" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                                <input class="form-control col-8" type="email" id="client-email" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary order">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="weekday-advice">
+            <button id="weekday">Today Kitchen Advice</button>
+        </div>
+        <section id="bestselling">
+            <h2 class="section-header">Best-selling Products</h2>
+            <p class="section-undertitle">Our customers' faves of the week
+            <p>
+        </section>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="col mb-4 ">
+                    <div class="card slider__item filter h-100">
+                        <img src="img/bicycle-pizza-cutter350-350.jpg" alt="bicycle like pizza cutter cuts the pizza" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Bicycle Pizza Cutter</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card slider__item filter h-100">
+                        <img src="img/rock-and-roll-oven-mitt350-350.jpg" alt="Cool rock-and-roll-oven-mitt" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Rock 'n' Roll Oven Mitt</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card slider__item filter h-100">
+                        <img src="img/fruit-keg-tapping-kit350-350.jpg" alt="A watermellon with keg tapping kit" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Fruit Keg Tapping Kit</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card slider__item filter h-100">
+                        <img src="img/funny-silicone-egg-mold350-350.jpg" alt="Funny Side up Silicone Egg Mold on the fruing pen" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Funny Silicone Egg Mold</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="collection">
+            <div id="year" class="year"></div>
+            <h2 class="collection-title">
+                <span>2021 </span>
+                New Collection
+            </h2>
+            <div>
+                <p class="comingsoon">
+                    <span class="comingsoon-word">COMING</span>
+                    <span class="comingsoon-word">SOON!</span>
+                </p>
+            </div>
+            <div id="countdown" class="countdown">
+                <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>days</small>
+                </div>
+                <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>hours</small>
+                </div>
+                <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>minutes</small>
+                </div>
+                <div class="time">
+                    <h2 id="seconds">00</h2>
+                    <small>seconds</small>
+                </div>
+            </div>
+            <img src="./img/spinner.gif" alt="Loading..." id="loading" class="loading"/>
+        </section>
+        <section class="products-box">
+            <h2 class="section-header" id="products">Our Products</h2>
+            <p class="section-undertitle">The best designer products from the 2020 collections.</p>
+            <div class="row products-container row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4"></div>
+        </section>
+        <section class="customers-section">
+            <h2 class="section-header">What Our Customers Say</h2>
+            <p class="section-undertitle">We love your feedback on our products!
+            <p>
+            <div class="slider-wrapper">
+                <div class="slider-customers row row-cols-1">
+                    <div class="col mb-4">
+                        <div class="card slider__item filter">
+                            <img src="img/spiderman-avatar330.png" class="rounded-circle" alt="100x100" data-holder-rendered="true">
+                            <div class="card-body cust">
+                                <h4 class="card-title">Spiderman</h4>
+                                <h5 class="card-contact">New York</h5>
+                                <p class="card-customers-text">
+                                    <em>I'm very pleased with my new Hulk oven mitts! They fit perfectly.</em>
+                                </p>
+                                <span class="card-text card-contact">October 28, 2018</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card slider__item filter">
+                            <img src="img/rocket-racoon-avatar-330.jpg" class="rounded-circle" alt="100x100" data-holder-rendered="true">
+                            <div class="card-body cust">
+                                <h4 class="card-title">Rocket</h4>
+                                <h5 class="card-contact">Secret Place</h5>
+                                <p class="card-customers-text">
+                                    <em>Thank you for helping me choose a present for friend's birthday. It looks great.</em>
+                                </p>
+                                <span class="card-contact">June 13, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card slider__item filter">
+                            <img src="img/lilu-dallas-avatar330.jpg" class="rounded-circle" alt="100x100" data-holder-rendered="true">
+                            <div class="card-body cust">
+                                <h4 class="card-title">Lilu Dallas</h4>
+                                <h5 class="card-contact">Some Galaxy</h5>
+                                <p class="card-customers-text">
+                                    <em>Next-day delivery surprised me a lot! I thought I would have to wait for weeks! </em>
+                                </p>
+                                <span class="card-contact">October 04, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card slider__item filter">
+                            <img src="img/harry-potter-avatar330.jpg" class="rounded-circle" alt="100x100" data-holder-rendered="true">
+                            <div class="card-body cust">
+                                <h4 class="card-title">Harry Potter</h4>
+                                <h5 class="card-contact">Hogwarts</h5>
+                                <p class="card-customers-text">
+                                    <em>Those Popsicle Molds are full of magic. They are just  perfect. </em>
+                                </p>
+                                <span class="card-contact">January 18, 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h3 class="about-little-title">About us</h3>
+            <h2 class="about-title">We sell cute kitchen gadgets for your good mood since 2010</h2>
+            <details>
+                <summary class="about-summary">How to make an order?</summary>
+                <p class="about-details">Specify the name of the preferred product in our contact form and provide all the needed details. Our manager will contact you soon after checking the stock status.</p>
+            </details>
+            <hr>
+            <details>
+                <summary class="about-summary">Dispatch v Delivery</summary>
+                <p class="about-details">On the product page, you can see a dispatch estimate e.g. 'within 2-3 weeks'. Dispatch is when we send the item to our delivery partner, not the date it is delivered to your door. If you need more accurate delivery times, check it with the manager.</p>
+            </details>
+            <hr>
+            <details>
+                <summary class="about-summary">Returns &Refunds</summary>
+                <p class="about-details">If you won't like the product, you can return it to us within 14 days  for a full refund. Simply contact us and we will assist you with your return. Remember that you'll need to disassemble the item and repackage it, in order for us to collect the product and return it to the warehouse.</p>
+                <hr>
+            </details>
+        </section>
+        <div class="prefooter">
+            <div class="prefooter-container1">
+                <form action="https://formspree.io/moqklddz" method="POST">
+                    <fieldset>
+                        <textarea class="formField" rows="1" name="name" placeholder="Enter your full name*" required></textarea>
+                        <br>
+                        <textarea class="formField" rows="1" name="phone-number" placeholder="Enter your phone number*" required></textarea>
+                        <br>
+                        <textarea class="formField" name="email" rows="1" placeholder="Enter your e-mail*" required></textarea>
+                        <br>
+                        <textarea class="formField" name="quote" rows="5" cols="30" placeholder="Type your message"></textarea>
+                        <br>
+                    </fieldset>
+                    <input class="submit-button" type="submit" value="SUBMIT">
+                </form>
+            </div>
+            <div class="prefooter-container2" id="contact">
+                <h2 class="section-header">Contacts</h2>
+                <p class="contact-greeting">We are always happy to chat with you. Contact us in any convenient way and we will answer all your questions.</p>
+                <div class="grid-wrapper">
+                    <div class="grid-title">Address</div>
+                    <div class="grid-text">1, Khreshchatyk str., Kyiv, Ukraine 01001</div>
+                    <div class="grid-title">Hours</div>
+                    <div class="grid-text">
+                        <p>Monday - Saturday: 10 AM - 9 PM</p>
+                        <p>Sunday: 10 AM - 2 PM</p>
+                    </div>
+                    <div class="grid-title">Contacts</div>
+                    <div>
+                        <a class="contact grid-text" href="tel:+12345678900">+1 (234) 567 89 00</a>
+                        <br>
+                        <a class="contact grid-text" href="mailto:kitchenspace@email.com">kitchenspace@email.com</a>
+                    </div>
+                </div>
+                <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4454259767526!2d30.525305915248925!3d50.451429679475524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51c3bdb9a1%3A0xff877737cf946b28!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwgMSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1592687577588!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul class="footer-menu">
+                <li>
+                    <a href="#about">About us</a>
+                </li>
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+                <li>
+                    <a href="#bestselling">Bestselling</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://kit.fontawesome.com/36d9fd7474.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/products-service.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>
+    <script defer src="js/index.js"></script>
+</body>
+</html>
